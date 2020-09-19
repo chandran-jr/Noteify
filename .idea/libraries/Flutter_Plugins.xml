@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file://$USER_HOME$/flutter file/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-1.6.14" />
+      <root url="file://$USER_HOME$/flutter file/flutter/.pub-cache/hosted/pub.dartlang.org/camera-0.5.8+5" />
+      <root url="file://$USER_HOME$/flutter file/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-0.0.4+3" />
+      <root url="file://$USER_HOME$/flutter file/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-0.0.1+2" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
