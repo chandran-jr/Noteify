@@ -1,1 +1,1 @@
-The dataset and validation set i used for training
+The dataset and validation set i used for training obtained from kaggle
