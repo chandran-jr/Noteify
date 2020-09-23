@@ -5,6 +5,6 @@ This is a project done by me and my partner <a href= "https://github.com/Ashniz2
 
 The main modules used are:
 
-*image_picker
-*tflite
-*cupertino_icons
+**image_picker** <br>
+**tflite** <br>
+**cupertino_icons*
