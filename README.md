@@ -7,4 +7,6 @@ The main modules used are:
 
 **image_picker** <br>
 **tflite** <br>
-**cupertino_icons*
+**cupertino_icons**
+
+The backend comprises of the tflite package using a tflite model imported from teachable machine from google which was used to train the model
