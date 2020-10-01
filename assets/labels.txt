@@ -3,5 +3,3 @@
 2 200 rupees
 3 100 rupees
 4 50 rupees
-5 20 rupees
-6 10 rupees
