@@ -9,3 +9,6 @@ The main modules used are:
 **flutter_tts**
 
 The backend comprises of the tflite package using a tflite model imported from teachable machine from google which was used to train the model. The flutter_tts is a text-to-speech module in flutter used to convert text to speech, used here so that the output can be obtained as an audio.
+
+<img src="screenshots/200.jpeg">
+<img src="screenshots/500class.jpeg">
