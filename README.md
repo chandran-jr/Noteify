@@ -5,8 +5,10 @@ This is a project done by me and my partner <a href= "https://github.com/Ashniz2
 
 The main modules used are:
 
+**camera** <br>
 **tflite** <br>
-**flutter_tts**
+**flutter_tts** <br>
+**path_provider**
 
 The backend comprises of the tflite package using a tflite model imported from teachable machine from google which was used to train the model. The flutter_tts is a text-to-speech module in flutter used to convert text to speech, used here so that the output can be obtained as an audio.
 
