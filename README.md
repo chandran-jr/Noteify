@@ -36,7 +36,7 @@ The backend comprises of the tflite package using a tflite model along with the 
 2. Download the repo. <br>
 3. Add the files in the **assets** folder into your local system assets folder. <br>
 4. Copy paste *main.dart* and *pubspec.yaml* files from the repo. <br>
-5. Change the **minsdkversion** in the /*android/app/build.gradle/* to 21. <br>
+5. Change the **minsdkversion** in the *android/app/build.gradle* to 21. <br>
 6. Run **packages.get** in *pubspec.yaml* <br>
 7. Run the *main.dart*.
 
