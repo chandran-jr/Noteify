@@ -39,3 +39,5 @@ The backend comprises of the tflite package using a tflite model along with the 
 5. Change the **minsdkversion** in the /*android/app/build.gradle/* to 21. <br>
 6. Run **packages.get** in *pubspec.yaml* <br>
 7. Run the *main.dart*.
+
+## Check out CONTRIBUTING.MD to learn how to contribute.
