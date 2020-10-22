@@ -29,3 +29,13 @@ The backend comprises of the tflite package using a tflite model along with the 
 2. High battery consumption.<br>
 3. Lesser accuracy if the image is blurry or dimly lit.<br>
 4. Prone to crashes.
+
+
+## How to clone
+1. Create a flutter app in your local system using android studio and name it Noteify <br>
+2. Download the repo. <br>
+3. Add the /*assets*/ folder into your local system. <br>
+4. Copy paste /*main.dart*/ and /*pubspec.yaml*/ files from the repo. <br>
+5. Change the **minsdkversion** in the /*android/app/build.gradle/* to 21. <br>
+6. Run **packages.get** in /*punspec.yaml*/
+7. Run the /*main.dart*/
