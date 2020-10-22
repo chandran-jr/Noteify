@@ -28,7 +28,7 @@ The backend comprises of the tflite package using a tflite model along with the 
 1. Heavy app.<br>
 2. High battery consumption.<br>
 3. Lesser accuracy if the image is blurry or dimly lit.<br>
-4. Prone to crashes.
+4. Prone to crashes if phone has poor/low specifications.
 
 
 ## How to clone
