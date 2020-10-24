@@ -1,1 +1,1 @@
-Model and label
+Model and label (improved)
