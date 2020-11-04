@@ -12,7 +12,6 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final cameras = await availableCameras();
   final firstCamera = cameras.first;
-  
 
   runApp(
     MaterialApp(
@@ -25,10 +24,8 @@ Future<void> main() async {
   );
 }
 
-
 class TakePictureScreen extends StatefulWidget {
   final CameraDescription camera;
-
 
   const TakePictureScreen({
     Key key,
@@ -42,8 +39,6 @@ class TakePictureScreen extends StatefulWidget {
 class _TakePictureScreenState extends State<TakePictureScreen> {
   CameraController _controller;
   Future<void> _initializeControllerFuture;
-
-
 
   @override
   void initState() {
@@ -71,8 +66,6 @@ class _TakePictureScreenState extends State<TakePictureScreen> {
 
   @override
   Widget build(BuildContext context) {
-
-
     return Scaffold(
       appBar: AppBar(title: Center(child: Text('Noteify'))),
       // Wait until the controller is initialized before displaying the
@@ -108,7 +101,6 @@ class _TakePictureScreenState extends State<TakePictureScreen> {
                       TorchCompat.turnOn();
                       // Ensure that the camera is initialized.
                       await _initializeControllerFuture;
-
 
                       // Construct the path where the image should be saved using the
                       // pattern package.
@@ -154,26 +146,27 @@ class DisplayPictureScreen extends StatefulWidget {
 }
 
 class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
-
   List op;
-  int total=0;
+  Image img;
+  int total;
 
 
   @override
   void initState() {
     super.initState();
+    total = 0;
 
     loadModel().then((value) {
-      setState(() {
-      });
+      setState(() {});
     });
+    img = Image.file(File(widget.imagePath));
+    classifyImage(widget.imagePath, total);
   }
 
   @override
   Widget build(BuildContext context) {
-    Image img = Image.file(File(widget.imagePath));
-    classifyImage(widget.imagePath, total);
-
+//    Image img = Image.file(File(widget.imagePath));
+//    classifyImage(widget.imagePath, total);
 
     return Scaffold(
       appBar: AppBar(title: Text('Display the Picture')),
@@ -193,42 +186,48 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
     );
   }
 
-  Future<void> runTextToSpeech(String outputMoney, int totalMoney) async  {
-
+  Future<void> runTextToSpeech(String outputMoney, int totalMoney) async {
     FlutterTts flutterTts;
     flutterTts = new FlutterTts();
 
-    if(outputMoney == "50 rupees") {
+    if (outputMoney == "50 rupees") {
       String tot = totalMoney.toString();
+      print(tot);
       String speakString = "Fifty rupees, Your total is now rupees, $tot";
       await flutterTts.setSpeechRate(0.3);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
-    if(outputMoney == "100 rupees") {
+    if (outputMoney == "100 rupees") {
       String tot = totalMoney.toString();
+      print(tot);
       String speakString = "One Hundred rupees, Your total is now rupees, $tot";
       await flutterTts.setSpeechRate(0.3);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
-    if(outputMoney == "200 rupees") {
+    if (outputMoney == "200 rupees") {
       String tot = totalMoney.toString();
+      print(tot);
       String speakString = "Two Hundred rupees, Your total is now rupees, $tot";
       await flutterTts.setSpeechRate(0.3);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
-    if(outputMoney == "500 rupees") {
+    if (outputMoney == "500 rupees") {
       String tot = totalMoney.toString();
-      String speakString = "Five Hundred rupees, Your total is now rupees, $tot";
+      print(tot);
+      String speakString =
+          "Five Hundred rupees, Your total is now rupees, $tot";
       await flutterTts.setSpeechRate(0.3);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
-    if(outputMoney == "2000 rupees") {
+    if (outputMoney == "2000 rupees") {
       String tot = totalMoney.toString();
-      String speakString = "Two thousand rupees, Your total is now rupees, $tot";
+      print(tot);
+      String speakString =
+          "Two thousand rupees, Your total is now rupees, $tot";
       await flutterTts.setSpeechRate(0.3);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
@@ -246,9 +245,10 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
 
     setState(() {
       op = output;
+      //tot=total;
     });
 
-    if(op != null) {
+    if (op != null) {
       if (op[0]["label"] == "50 rupees") {
         total += 50;
       }
@@ -266,12 +266,9 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
         total += 2000;
       }
       runTextToSpeech(op[0]["label"], total);
-    }
-
-    else
+    } else
       runTextToSpeech("No note found", total);
   }
-
 
   loadModel() async {
     await Tflite.loadModel(
