@@ -8,10 +8,13 @@ import 'package:torch_compat/torch_compat.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:tflite/tflite.dart';
 
+int total = 0;
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final cameras = await availableCameras();
   final firstCamera = cameras.first;
+
 
   runApp(
     MaterialApp(
@@ -26,7 +29,6 @@ Future<void> main() async {
 
 class TakePictureScreen extends StatefulWidget {
   final CameraDescription camera;
-
   const TakePictureScreen({
     Key key,
     @required this.camera,
@@ -148,19 +150,15 @@ class DisplayPictureScreen extends StatefulWidget {
 class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
   List op;
   Image img;
-  int total;
-
 
   @override
   void initState() {
     super.initState();
-    total = 0;
-
     loadModel().then((value) {
       setState(() {});
     });
     img = Image.file(File(widget.imagePath));
-    classifyImage(widget.imagePath, total);
+    classifyImage(widget.imagePath);
   }
 
   @override
@@ -234,7 +232,7 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
     }
   }
 
-  classifyImage(String image, int total) async {
+  classifyImage(String image) async {
     var output = await Tflite.runModelOnImage(
       path: image,
       numResults: 5,
@@ -243,29 +241,30 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
       imageStd: 127.5,
     );
 
-    setState(() {
-      op = output;
-      //tot=total;
-    });
+    op = output;
 
     if (op != null) {
       if (op[0]["label"] == "50 rupees") {
         total += 50;
+        runTextToSpeech("50 rupees", total);
       }
       if (op[0]["label"] == "100 rupees") {
         total += 100;
+        runTextToSpeech("100 rupees", total);
       }
       if (op[0]["label"] == "200 rupees") {
         total += 200;
+        runTextToSpeech("200 rupees", total);
       }
       if (op[0]["label"] == "500 rupees") {
         total += 500;
+        runTextToSpeech("500 rupees", total);
       }
 
       if (op[0]["label"] == "2000 rupees") {
         total += 2000;
+        runTextToSpeech("2000 rupees", total);
       }
-      runTextToSpeech(op[0]["label"], total);
     } else
       runTextToSpeech("No note found", total);
   }
