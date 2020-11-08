@@ -1,4 +1,4 @@
-# Noteify <img src="screenshots/app icon.jpeg" width="80px" height=auto>
+# Noteify <img src="screenshots/app icon.jpeg" width="60px" height="60px">
 
 ## Noteify is a currency detection app made for the visually impaired to check whether they have been handed the right amount of money and thereby, ensuring that they have not been cheated upon, giving the output as a computer-generated audio, having basic UI for better User-Experience. 
 
