@@ -32,7 +32,9 @@ The backend comprises of the tflite package using a tflite model along with the 
 3. Add the files in the **assets** folder into your local system assets folder. <br>
 4. Copy paste *main.dart* and *pubspec.yaml* files from the repo. <br>
 5. Change the **minsdkversion** in the *android/app/build.gradle* to 21. <br>
-6. Run **packages.get** in *pubspec.yaml* <br>
-7. Run the *main.dart*.
+6. Copy paste *ios/runner/info.plist* from this repo.
+7. Run **packages.get** in *pubspec.yaml* <br>
+8. To change your app icon to ours, you have to change the minmap folders in your *android/app/res/main* to the ones in the repo.
+7. Run the *main.dart* after connecting to your mobile.
 
 ## Check out CONTRIBUTING.MD to learn how to contribute.
