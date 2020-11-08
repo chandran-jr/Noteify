@@ -24,12 +24,6 @@ The backend comprises of the tflite package using a tflite model along with the 
 6. A total calculating feature.<br>
 7. Computer-generated audio output.<br>
 
-**Disadvantages**
-1. Heavy app.<br>
-2. High battery consumption.<br>
-3. Lesser accuracy if the image is blurry or dimly lit.<br>
-4. Prone to crashes if phone has poor/low specifications.
-
 
 ## How to clone
 1. Create a flutter app in your local system using android studio and name it Noteify <br>
