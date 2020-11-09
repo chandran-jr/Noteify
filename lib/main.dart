@@ -90,8 +90,8 @@ class _TakePictureScreenState extends State<TakePictureScreen> {
         children: <Widget>[
           Center(
             child: Container(
-              height: 100.0,
-              width: 100.0,
+              height: 180.0,
+              width: 180.0,
               child: FittedBox(
                 child: FloatingActionButton(
                   child: Icon(Icons.camera_alt),
@@ -192,7 +192,7 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
       String tot = totalMoney.toString();
       print(tot);
       String speakString = "Fifty rupees, Your total is now rupees, $tot";
-      await flutterTts.setSpeechRate(0.3);
+      await flutterTts.setSpeechRate(0.8);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
@@ -200,7 +200,7 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
       String tot = totalMoney.toString();
       print(tot);
       String speakString = "One Hundred rupees, Your total is now rupees, $tot";
-      await flutterTts.setSpeechRate(0.3);
+      await flutterTts.setSpeechRate(0.8);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
@@ -208,7 +208,7 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
       String tot = totalMoney.toString();
       print(tot);
       String speakString = "Two Hundred rupees, Your total is now rupees, $tot";
-      await flutterTts.setSpeechRate(0.3);
+      await flutterTts.setSpeechRate(0.8);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
@@ -217,7 +217,7 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
       print(tot);
       String speakString =
           "Five Hundred rupees, Your total is now rupees, $tot";
-      await flutterTts.setSpeechRate(0.3);
+      await flutterTts.setSpeechRate(0.8);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
@@ -226,7 +226,7 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
       print(tot);
       String speakString =
           "Two thousand rupees, Your total is now rupees, $tot";
-      await flutterTts.setSpeechRate(0.3);
+      await flutterTts.setSpeechRate(0.8);
       await flutterTts.awaitSpeakCompletion(true);
       await flutterTts.speak(speakString);
     }
@@ -272,7 +272,7 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
   loadModel() async {
     await Tflite.loadModel(
       model: "assets/model_unquant.tflite",
-      labels: "assets/labels.txt",
+      labels: "assets/labels.txt"
     );
   }
 

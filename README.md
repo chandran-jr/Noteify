@@ -1,4 +1,5 @@
-# Noteify
+# Noteify <img src="screenshots/app icon.jpeg" width="60px" height="60px">
+
 ## Noteify is a currency detection app made for the visually impaired to check whether they have been handed the right amount of money and thereby, ensuring that they have not been cheated upon, giving the output as a computer-generated audio, having basic UI for better User-Experience. 
 
 This is a project done by me and my partner <a href= "https://github.com/Ashniz24"> Ashna Nizam </a> and the app was developed using Flutter.
@@ -24,12 +25,6 @@ The backend comprises of the tflite package using a tflite model along with the 
 6. A total calculating feature.<br>
 7. Computer-generated audio output.<br>
 
-**Disadvantages**
-1. Heavy app.<br>
-2. High battery consumption.<br>
-3. Lesser accuracy if the image is blurry or dimly lit.<br>
-4. Prone to crashes if phone has poor/low specifications.
-
 
 ## How to clone
 1. Create a flutter app in your local system using android studio and name it Noteify <br>
@@ -37,7 +32,9 @@ The backend comprises of the tflite package using a tflite model along with the 
 3. Add the files in the **assets** folder into your local system assets folder. <br>
 4. Copy paste *main.dart* and *pubspec.yaml* files from the repo. <br>
 5. Change the **minsdkversion** in the *android/app/build.gradle* to 21. <br>
-6. Run **packages.get** in *pubspec.yaml* <br>
-7. Run the *main.dart*.
+6. Copy paste *ios/runner/info.plist* from this repo.
+7. Run **packages.get** in *pubspec.yaml* <br>
+8. Optional(To change your app icon to ours, you have to change the minmap folders in your *android/app/src/main/res/* to the ones in the repo).
+9. Run the *main.dart* after connecting to your mobile.
 
 ## Check out CONTRIBUTING.MD to learn how to contribute.
