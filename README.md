@@ -24,6 +24,7 @@ The backend comprises of the tflite package using a tflite model along with the 
 5. Good-high accuracy in predicting.<br>
 6. A total calculating feature.<br>
 7. Computer-generated audio output.<br>
+8. Automatic initialization of app when it is closed. <br>
 
 
 ## How to clone
