@@ -2,7 +2,7 @@
 
 ## Noteify is a currency detection app made for the visually impaired to check whether they have been handed the right amount of money and thereby, ensuring that they have not been cheated upon, giving the output as a computer-generated audio, having basic UI for better User-Experience. 
 
-This is a project done by me and my partners <a href= "https://github.com/Ashniz24"> Ashna Nizam </a>, <a href= "https://github.com/bensam"> Ben Sam </a>, <a href= "https://github.com/mannu"> Mannu Thomas </a> and <a href= "https://github.com/PeterChageth"> CJ Peter </a> and the app was developed using Flutter.
+This is a project done by me and my partners <a href= "https://github.com/Ashniz24"> Ashna Nizam </a>, <a href= "https://github.com/bensam02"> Ben Sam </a>, <a href= "https://github.com/Mannu7789"> Mannu Thomas </a> and <a href= "https://github.com/PeterChageth"> CJ Peter </a> and the app was developed using Flutter.
 
 The main modules used are:
 
