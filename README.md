@@ -39,3 +39,7 @@ The backend comprises of the tflite package using a tflite model along with the 
 9. Run the *main.dart* after connecting to your mobile.
 
 ## Check out CONTRIBUTING.MD to learn how to contribute.
+
+## Check out the demo below!
+
+<iframe width="900" height="506" src="https://www.youtube.com/embed/kRQMssuoE0k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
