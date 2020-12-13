@@ -19,7 +19,7 @@ The backend comprises of the tflite package using a tflite model along with the 
 **Advantages**
 1. No authentication/login required.<br>
 2. No internet connection required.<br>
-3. Highly User-friendly <br>
+3. Highly User-friendly.<br>
 4. Local storage will not be further consumed after installation.<br>
 5. Good-high accuracy in predicting.<br>
 6. A total calculating feature.<br>
