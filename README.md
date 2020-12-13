@@ -42,4 +42,4 @@ The backend comprises of the tflite package using a tflite model along with the 
 
 ## Check out the demo below!
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/kRQMssuoE0k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.youtube.com/embed/kRQMssuoE0k"> Youtube Video </a>
