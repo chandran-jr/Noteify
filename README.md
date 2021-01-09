@@ -44,4 +44,4 @@ The backend comprises of the tflite package using a tflite model along with the 
 
 <a href="https://www.youtube.com/embed/kRQMssuoE0k"> Youtube Video </a>
 
-## Note: This project is time being not updated upto the present versions of the packages used, so cloning might not work unless you update the code correspodingly
+## Note: This project is time being not updated upto the present versions of the packages used, so cloning might not work unless you update the code correspondingly
