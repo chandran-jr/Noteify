@@ -15,10 +15,10 @@ Future<void> main() async {
   final cameras = await availableCameras();
   final firstCamera = cameras.first;
 
-
   runApp(
     MaterialApp(
       theme: ThemeData.dark(),
+      debugShowCheckedModeBanner: false,
       home: TakePictureScreen(
         // Pass the appropriate camera to the TakePictureScreen widget.
         camera: firstCamera,
@@ -271,9 +271,7 @@ class _DisplayPictureScreenState extends State<DisplayPictureScreen> {
 
   loadModel() async {
     await Tflite.loadModel(
-      model: "assets/model_unquant.tflite",
-      labels: "assets/labels.txt"
-    );
+        model: "assets/model_unquant.tflite", labels: "assets/labels.txt");
   }
 
   @override
