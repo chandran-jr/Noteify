@@ -42,6 +42,6 @@ The backend comprises of the tflite package using a tflite model along with the 
 
 ## Check out the demo below!
 
-<a href="https://www.youtube.com/embed/kRQMssuoE0k"> Youtube Video </a>
+<a href="https://youtu.be/P4t4FfayMzE"> Youtube Video (DEMO) </a>
 
 ### Note: This project is time being not updated upto the present versions of the packages used, so cloning might not work unless you update the code correspondingly, sorry😅
