@@ -1,8 +1,9 @@
 ## **Released under the Open Innovation License**
 
-Copyright © 2020 Govind Chandran
+Copyright © 2021 Govind Chandran & Ashna Nizam
 
 *Version 1, 10th November 2020*
+*Version 1.1, 12th January 2021*
 
 This project is licensed under the *Open Innovation License*. This means any code, file, diagrams, data format, or other innovation containing this license within it can be copied, modified, redistributed, published, or even used for commercial purposes within the context of this license. 
 
