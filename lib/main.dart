@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:torch_compat/torch_compat.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:tflite/tflite.dart';
 
@@ -62,7 +61,6 @@ class _TakePictureScreenState extends State<TakePictureScreen> {
   void dispose() {
     // Dispose of the controller when the widget is disposed.
     _controller.dispose();
-    TorchCompat.dispose();
     super.dispose();
   }
 
@@ -100,7 +98,6 @@ class _TakePictureScreenState extends State<TakePictureScreen> {
                     // Take the Picture in a try / catch block. If anything goes wrong,
                     // catch the error.
                     try {
-                      TorchCompat.turnOn();
                       // Ensure that the camera is initialized.
                       await _initializeControllerFuture;
 
@@ -115,7 +112,6 @@ class _TakePictureScreenState extends State<TakePictureScreen> {
 
                       // Attempt to take a picture and log where it's been saved.
                       await _controller.takePicture(path);
-                      TorchCompat.turnOff();
 
                       // If the picture was taken, display it on a new screen.
                       Navigator.push(
