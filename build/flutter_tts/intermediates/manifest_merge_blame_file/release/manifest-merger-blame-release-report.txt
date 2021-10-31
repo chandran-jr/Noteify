@@ -1,0 +1,21 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tundralabs.fluttertts" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->D:\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_tts-3.2.2\android\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="27" />
+7-->D:\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_tts-3.2.2\android\src\main\AndroidManifest.xml
+8
+9    <queries>
+9-->D:\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_tts-3.2.2\android\src\main\AndroidManifest.xml:3:5-7:15
+10        <intent>
+10-->D:\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_tts-3.2.2\android\src\main\AndroidManifest.xml:4:9-6:18
+11            <action android:name="android.intent.action.TTS_SERVICE" />
+11-->D:\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_tts-3.2.2\android\src\main\AndroidManifest.xml:5:13-72
+11-->D:\flutter\.pub-cache\hosted\pub.dartlang.org\flutter_tts-3.2.2\android\src\main\AndroidManifest.xml:5:21-69
+12        </intent>
+13    </queries>
+14
+15</manifest>

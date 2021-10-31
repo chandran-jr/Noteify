@@ -1,0 +1,83 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.tflite_example"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->[:flutter_tts] E:\GitProjects\Noteify\build\flutter_tts\intermediates\library_manifest\release\AndroidManifest.xml:9:5-13:15
+12        <intent>
+12-->[:flutter_tts] E:\GitProjects\Noteify\build\flutter_tts\intermediates\library_manifest\release\AndroidManifest.xml:10:9-12:18
+13            <action android:name="android.intent.action.TTS_SERVICE" />
+13-->[:flutter_tts] E:\GitProjects\Noteify\build\flutter_tts\intermediates\library_manifest\release\AndroidManifest.xml:11:13-72
+13-->[:flutter_tts] E:\GitProjects\Noteify\build\flutter_tts\intermediates\library_manifest\release\AndroidManifest.xml:11:21-69
+14        </intent>
+15    </queries>
+16
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->[:camera] E:\GitProjects\Noteify\build\camera\intermediates\library_manifest\release\AndroidManifest.xml:7:5-65
+17-->[:camera] E:\GitProjects\Noteify\build\camera\intermediates\library_manifest\release\AndroidManifest.xml:7:22-62
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->[:camera] E:\GitProjects\Noteify\build\camera\intermediates\library_manifest\release\AndroidManifest.xml:8:5-71
+18-->[:camera] E:\GitProjects\Noteify\build\camera\intermediates\library_manifest\release\AndroidManifest.xml:8:22-68
+19    <!--
+20 io.flutter.app.FlutterApplication is an android.app.Application that
+21         calls FlutterMain.startInitialization(this); in its onCreate method.
+22         In most cases you can leave this as-is, but you if you want to provide
+23         additional functionality it is fine to subclass or reimplement
+24         FlutterApplication and put your custom class here.
+25    -->
+26    <application
+26-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:8:5-29:19
+27        android:name="io.flutter.app.FlutterApplication"
+27-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:9:9-57
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.1.0] C:\Users\ADMIN\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+29        android:icon="@mipmap/ic_launcher"
+29-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:11:9-43
+30        android:label="Noteify" >
+30-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:10:9-32
+31        <activity
+31-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:12:9-23:20
+32            android:name="com.ashniz.noteify.MainActivity"
+32-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:13:13-41
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:16:13-163
+34            android:hardwareAccelerated="true"
+34-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:17:13-47
+35            android:launchMode="singleTop"
+35-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:14:13-43
+36            android:theme="@style/LaunchTheme"
+36-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:15:13-47
+37            android:windowSoftInputMode="adjustResize" >
+37-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:18:13-55
+38            <intent-filter>
+38-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:19:13-22:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:20:17-68
+39-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:20:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:21:17-76
+41-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:21:27-74
+42            </intent-filter>
+43        </activity>
+44        <!--
+45             Don't delete the meta-data below.
+46             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+47        -->
+48        <meta-data
+48-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:26:9-28:33
+49            android:name="flutterEmbedding"
+49-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:27:13-44
+50            android:value="2" />
+50-->E:\GitProjects\Noteify\android\app\src\main\AndroidManifest.xml:28:13-30
+51    </application>
+52
+53</manifest>
