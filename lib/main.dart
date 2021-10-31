@@ -19,7 +19,7 @@ Future<void> main() async {
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: TakePictureScreen(
-        // Pass the appropriate camera to the TakePictureScreen widget.
+        // Pass the appropriate camera to the TakePictu,mbn kjnreScreen widget.
         camera: firstCamera,
       ),
     ),
