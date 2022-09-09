@@ -2,8 +2,6 @@
 
 ## Noteify is an artificially intelligent currency detection app made for the visually impaired to check whether they have been handed the right amount of money and thereby, ensuring that they have not been cheated upon, giving the output as a computer-generated audio, having basic UI for better User-Experience. 
 
-## WhatsApp me at +91 8330025649 for the apk. A small fee will be charged though :/ but we can workout the deal 
-
 ## Check out the demo below!
 
 <a href="https://youtu.be/P4t4FfayMzE"> Youtube Video (DEMO) </a>
